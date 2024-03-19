@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- --шріфт -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- нормалізатор -->
     <link
       rel="stylesheet"
@@ -14,28 +20,32 @@
   </head>
   <body>
     <header class="header">
-      <nav class="site-nav">
-        <a href="./index.html">
+      <div class="container header-container">
+        <nav class="site-nav">
+          <!-- <a href="./index.html">
           <img
             src="./img/Logo_header.svg"
             width="68.93px"
             height="55.46px"
             alt="logo"
           />
-        </a>
-        <ul class="site-nav-ul">
-          <li><a href="./index.html" class="site-nav-item">About</a></li>
-          <li><a href="#" class="site-nav-item">Services and prices</a></li>
-          <li><a href="#" class="site-nav-item">Barbers</a></li>
-          <li><a href="#" class="site-nav-item">Contacts</a></li>
-        </ul>
-      </nav>
-      <a class="site-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
-      <button class="button-booking-grey" type="button">Online-booking</button>
+        </a> -->
+          <ul class="site-nav-block">
+            <li><a href="./index.html" class="site-nav-item">About</a></li>
+            <li><a href="#" class="site-nav-item">Services and prices</a></li>
+            <li><a href="#" class="site-nav-item">Barbers</a></li>
+            <li><a href="#" class="site-nav-item">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="site-contacts">
+          <a class="site-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </address>
+        <button class="btn btn-grey" type="button">Online-booking</button>
+      </div>
     </header>
     <main>
       <section class="sec-hero">
-        <div class="div-hero-attr">
+        <div class="container container-hero">
           <ul class="sec-hero-list">
             <li><p class="sec-hero-p-one">A hair salon for men in Kyiv</p></li>
             <li><h1>BarberShop</h1></li>
@@ -64,17 +74,23 @@
         </div>
       </section>
       <section class="sec-about">
-        <ul class="sec-about-photo-ul">
-          <li>
-            <img src="#" alt="photo about" class="sec-about-img" />
-          </li>
-          <li>
-            <img src="#" alt="work" class="sec-about-img" />
-          </li>
-          <li>
+        <div class="container about-container">
+          <ul class="about-photo-block">
+            <li>
+              <img
+                src="./img/img1-sec2.jpg"
+                alt="photo about"
+                class="sec-about-img"
+              />
+            </li>
+            <li>
+              <img src="./img/img2-sec2.jpg" alt="work" class="sec-about-img" />
+            </li>
+          </ul>
+          <div class="wrap-text-about">
             <p class="sec-about-p-one">About</p>
-            <h2 class="sec-about-header">Best Barbershop in your city</h2>
-            <h3>
+            <h2 class="header about-header">Best Barbershop in your city</h2>
+            <h3 class="wrap-text-header">
               If you want to add more confidence to your image, you should
               definitely visit us.
             </h3>
@@ -85,12 +101,47 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button class="button-booking-white" type="button">
+            <button class="btn btn-white btn-about" type="button">
               Online-booking
             </button>
-          </li>
-        </ul>
+          </div>
+        </div>
       </section>
+      <section class="section-price">
+        <div class="container price-container">
+          <div class="text-block">
+            <svg width="10" height="10">
+              <use></use>
+            </svg>
+            <p class="wrap-text">Spend your time with the best masters</p>
+          </div>
+          <h2 class="header price-header">Services and prices</h2>
+          <div class="price-block">
+            <ul class="left-price-block">
+              <li class="price-item">Men’s haircut</li>
+              <li class="price-item">Beard trim</li>
+              <li class="price-item">Mustache trim</li>
+              <li class="price-item">Straight razor shave</li>
+            </ul>
+            <ul class="right-price-block">
+              <li class="price-item">Trainee’s haircut</li>
+              <li class="price-item">Haircut under the nozzle</li>
+              <li class="price-item">Children’s haircut (0-12 y.o.)</li>
+              <li class="price-item">Camouflage of gray hair</li>
+            </ul>
+          </div>
+          <button type="button" class="btn btn-grey btn-price">
+            online-booking
+          </button>
+        </div>
+      </section>
+      <section class="people-section">
+        <div class="container container-people"></div>
+      </section>
+      <section class="barbers-section">
+        <div class="container container-barbers"></div>
+      </section>
+      <div class="empty-block"></div>
     </main>
   </body>
 </html>
