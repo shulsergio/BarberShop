@@ -28,6 +28,21 @@ body {
 color: #303030;
 
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
 .container{
         width: 1600px;
             margin: 0 auto;
@@ -123,7 +138,7 @@ width: 1px;
     background: #303030;
         transform: rotate(-90deg);
 }
-.header{
+.site-header{
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 42px;
@@ -169,11 +184,13 @@ padding-top: 120px;
 padding-left: 215px;
 }
 
-.wrap-text{
+.site-wrap-text{
         font-weight: 600;
         font-size: 11px;
         text-transform: uppercase;
-        color: rgba(157, 164, 189, 0.6);
+}
+.price-text{
+color: rgba(157, 164, 189, 0.6);
 }
 
 .price-header{
@@ -225,18 +242,152 @@ margin: 44px auto 120px;
 
 /* ---------- */
 .container-people{
-    width: 1170px;
-    min-height: 571px;
-    margin: 0 auto;
-display: flex;
-gap: 130px;
+    width: 1000px;
+    min-height: 331px;
+    margin: 120px 0 0 315px;
+    display: flex;
+    gap: 130px;
+    margin: 120px auto 0px;
+    justify-content: center;
+/* --- */
+        border: 1px solid #000;
+}
+
+.left-wrap{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.left-wrap-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.add-wrap{
+    padding-top: 35px;
+}
+
+.left-wrap-item {
+    width: 170px;
+    height: 133px;
+    background: #f7f7f7;
+            border: 1px solid #000;
+}
+.wrapper-text{
+    padding: 20px 24px;
+}
+.left-wrap-text{
+        font-weight: 700;
+        font-size: 42px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #303030;
+}
+.left-wrap-text span {
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #ff6c00;
+}
+.left-wrap-p{
+    margin-top: 6px;
+    font-weight: 600;
+    font-size: 11px;
+    color: #303030;
+    text-align: center;
+}
+.right-wrap-block{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.wrap-list{
+    padding-top: 9px;
+}
+.people-header{
+    color: #303030;
+    max-width: 430px;
+}
+.wrap-list-text{
+
+        font-weight: 400;
+        font-size: 18px;
+
+        line-height: 1.66667;
+        letter-spacing: 0.02em;
+        color: #555;
+        max-width: 500px;
 }
 
 /* ---------- */
 .container-barbers {
     min-height: 870px;
+    margin: 120px auto;
+    background: #f7f7f7;
+}
+.text-barbers{
+    padding: 120px 0 0 215px;
+}
+.header-beabers{
+    color: #303030;
+    padding: 20px 0 0 215px;
+}
+
+/* ----- beard */
+
+
+.container-beard{
+
+    min-height: 659px;
     margin: 0 auto;
 }
+
+.text-beard{
+padding-top: 120px;
+padding-left: 215px;
+}
+
+.beard-list{
+    padding-top: 44px;
+    padding-left: 215px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+
+.booking-container{
+min-height: 634px;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+/* //////////////////////// */
+
+
+.booking-container {
+min-height: 634px;
+display: flex;
+flex-direction: row;
+border: 1px solid #030303;
+}
+
+.left-box {}
+
+.online-header {}
+
+.booking-form {}
+
+.rightbox {}
+
+.addr-box {}
+
+.addr-text {}
+
+.hour-text {}
+/* //////////////////// */
 /* ------------empty-block */
 .empty-block{
     margin-top: 100px;
